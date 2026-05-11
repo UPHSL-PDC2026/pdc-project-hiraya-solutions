@@ -2,11 +2,63 @@
 ### Hiraya Solutions
 
 ---
+## Video Presentation
 
-# Final Project Documentation: Distributed Data Processing
-### Hiraya Solutions
+[![Watch the Video Presentation](https://img.shields.io/badge/Google%20Drive-Watch%20Presentation-blue?logo=google-drive)](https://drive.google.com/drive/folders/1ZY7wLXmQYZ4kBkH3M8z9oa6SoJ8EIBGl?usp=sharing)
+
+[Click here to watch the Final Project Video Presentation](https://drive.google.com/drive/folders/1ZY7wLXmQYZ4kBkH3M8z9oa6SoJ8EIBGl?usp=sharing)
 
 ---
+
+## Project Overview
+
+This project extends the Midterm outcome by migrating data processing to a distributed computing framework. Working from the same 400,000-row sales dataset (`synthetic_sales_data_400k.csv`), the system implements three core analytics operations -- filtering, aggregation, and sorting -- across three execution strategies:
+
+- **Sequential** -- single-threaded, row-by-row processing using Python csv module
+- **Parallel (Midterm)** -- multi-threaded processing using ThreadPoolExecutor
+- **Distributed (Final)** -- distributed processing using Apache Spark (PySpark)
+
+---
+
+## Tools and Technologies Used
+
+| Tool | Purpose |
+| --- | --- |
+| Python 3.12 | Primary programming language |
+| csv module | Row-by-row data loading |
+| ThreadPoolExecutor | Parallel execution across threads |
+| multiprocessing | CPU core count for worker sizing |
+| Apache Spark 4.1.1 (PySpark) | Distributed data processing framework |
+| pyspark.sql.functions | Spark SQL operations |
+| time | Execution time measurement |
+| Jupyter Notebook | Interactive development environment |
+
+---
+
+## Instructions for Running the Project
+
+1. Clone or download the repository and open it in VS Code
+2. Install dependencies:
+    ```
+    pip install notebook pyspark
+    ```
+3. Open `FinalsIteration.ipynb` in VS Code or Jupyter
+4. Run **Kernel -> Restart & Run All**
+5. Observe the printed execution times for each operation
+
+> The dataset file must be inside a directory named `assets` in the same directory as the notebook.
+
+---
+
+## Team Members
+
+| Member Name | Role |
+| --- | --- |
+| Allan John Funelas | Programmer |
+| Carl Angelo Hernandez | Researcher |
+| Lucky Guevarra | Researcher |
+| Zyrus Alvez | Documentation |
+
 
 ## Table of Contents
 1. [Project Objective](#project-objective)
